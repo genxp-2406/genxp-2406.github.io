@@ -42,12 +42,15 @@ permalink: /
 {% endcapture %}
 {% include home-section.html section="week04" title=title topics=topics %}
 
-{% comment %}
-
 {% assign title = "Week 05: Data Structures" %}
 {% capture topics %}
+  data
+  images
+  videos
 {% endcapture %}
 {% include home-section.html section="week05" title=title topics=topics %}
+
+{% comment %}
 
 {% assign title = "Week 06: Systems and Patterns" %}
 {% capture topics %}
