@@ -6,6 +6,9 @@ permalink: /
   programming
   p5-setup
   p5-intro
+  drawing
+  variables
+  transformations
 {% endcapture %}
 {% include home-section.html section="week01" title=title topics=topics %}
 
