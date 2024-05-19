@@ -12,30 +12,41 @@ permalink: /
 {% endcapture %}
 {% include home-section.html section="week01" title=title topics=topics %}
 
-{% comment %}
-
-{% assign title = "Week 02" %}
+{% assign title = "Week 02: Structures" %}
 {% capture topics %}
+  conditionals
+  patterns
+  counters
+  functions
+  random
 {% endcapture %}
 {% include home-section.html section="week02" title=title topics=topics %}
 
-{% assign title = "Week 03" %}
+{% assign title = "Week 03: Time" %}
 {% capture topics %}
+  arrays
+  strings
+  objects
+  classes
+  maths
+  animations
 {% endcapture %}
 {% include home-section.html section="week03" title=title topics=topics %}
 
-{% assign title = "Week 04" %}
+{% comment %}
+
+{% assign title = "Week 04: Randomness and Simulations" %}
 {% capture topics %}
   
 {% endcapture %}
 {% include home-section.html section="week04" title=title topics=topics %}
 
-{% assign title = "Week 05" %}
+{% assign title = "Week 05: Data Structures" %}
 {% capture topics %}
 {% endcapture %}
 {% include home-section.html section="week05" title=title topics=topics %}
 
-{% assign title = "Week 06" %}
+{% assign title = "Week 06: Systems and Patterns" %}
 {% capture topics %}
 {% endcapture %}
 {% include home-section.html section="week06" title=title topics=topics %}
