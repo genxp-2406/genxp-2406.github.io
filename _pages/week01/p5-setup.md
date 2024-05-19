@@ -3,9 +3,9 @@ title: Setting up p5.js
 ---
 Let's see how to start a [p5.js](https://p5js.org/) project.
 
-## Online Editor
+## Web Editor
 
-The easiest way to get started with p5.js is to use the online p5.js editor available at: [https://editor.p5js.org/](https://editor.p5js.org/).
+The easiest way to get started with p5.js is to use the p5.js web editor available at: [https://editor.p5js.org/](https://editor.p5js.org/).
 
 We can start writing and executing p5.js code right away, but it's best to set up an account first so we can save and share our projects later.
 
