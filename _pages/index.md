@@ -33,13 +33,16 @@ permalink: /
 {% endcapture %}
 {% include home-section.html section="week03" title=title topics=topics %}
 
-{% comment %}
-
 {% assign title = "Week 04: Randomness and Simulations" %}
 {% capture topics %}
-  
+  cycles
+  sincos
+  vectors
+  more-random
 {% endcapture %}
 {% include home-section.html section="week04" title=title topics=topics %}
+
+{% comment %}
 
 {% assign title = "Week 05: Data Structures" %}
 {% capture topics %}
