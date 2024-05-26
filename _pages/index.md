@@ -12,6 +12,8 @@ permalink: /
 {% endcapture %}
 {% include home-section.html section="week01" title=title topics=topics %}
 
+{% comment %}
+
 {% assign title = "Week 02: Structures" %}
 {% capture topics %}
   conditionals
@@ -21,8 +23,6 @@ permalink: /
   random
 {% endcapture %}
 {% include home-section.html section="week02" title=title topics=topics %}
-
-{% comment %}
 
 {% assign title = "Week 03: Time" %}
 {% capture topics %}
