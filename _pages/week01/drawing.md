@@ -61,7 +61,7 @@ If we want the shapes to have different proportions, we just have to use a fourt
 
 ```js
 rect(10, 100, 80, 40);
-ellipse(200, 300, 100);
+ellipse(300, 200, 100, 150);
 ```
 
 {% include p5-editor.html id="afP8colwV" %}
