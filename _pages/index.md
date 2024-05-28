@@ -12,6 +12,8 @@ permalink: /
 {% endcapture %}
 {% include home-section.html section="week01" title=title topics=topics %}
 
+{% comment %}
+
 {% assign title = "Week 02: Structures" %}
 {% capture topics %}
   conditionals
@@ -28,12 +30,10 @@ permalink: /
   strings
   objects
   classes
-  maths
   animations
+  maths
 {% endcapture %}
 {% include home-section.html section="week03" title=title topics=topics %}
-
-{% comment %}
 
 {% assign title = "Week 04: Randomness and Simulations" %}
 {% capture topics %}
