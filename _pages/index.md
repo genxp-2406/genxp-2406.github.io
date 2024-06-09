@@ -10,9 +10,7 @@ permalink: /
   variables
   transformations
 {% endcapture %}
-{% include home-section.html section="week01" title=title topics=topics %}
-
-{% comment %}
+{% include home-section.html section="week01" title=title topics=topics open="open" %}
 
 {% assign title = "Week 02: Structures" %}
 {% capture topics %}
@@ -22,7 +20,9 @@ permalink: /
   functions
   random
 {% endcapture %}
-{% include home-section.html section="week02" title=title topics=topics %}
+{% include home-section.html section="week02" title=title topics=topics open="open" %}
+
+{% comment %}
 
 {% assign title = "Week 03: Time" %}
 {% capture topics %}

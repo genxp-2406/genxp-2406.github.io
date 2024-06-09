@@ -2,8 +2,9 @@
 {% assign title = include.title | split: ":" | first %}
 {% assign subtitle = include.title | split: ":" | last %}
 {% assign section = include.section %}
+{% assign open = include.open | default: "" %}
 
-<details class="home-details" open>
+<details class="home-details" {{ open }}>
   <summary class="home-summary">
     <span class="home-summary-title">{{ title }}</span>
     <span class="home-summary-subtitle">{{ subtitle }}</span>
