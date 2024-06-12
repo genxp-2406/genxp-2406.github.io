@@ -10,7 +10,7 @@ permalink: /
   variables
   transformations
 {% endcapture %}
-{% include home-section.html section="week01" title=title topics=topics open="open" %}
+{% include home-section.html section="week01" title=title topics=topics %}
 
 {% assign title = "Week 02: Structures" %}
 {% capture topics %}
@@ -35,20 +35,20 @@ permalink: /
 {% endcapture %}
 {% include home-section.html section="week03" title=title topics=topics %}
 
-{% assign title = "Week 04: Randomness and Simulations" %}
+{% assign title = "Week 04: Data Structures" %}
+{% capture topics %}
+  data
+  images
+  videos
+{% endcapture %}
+{% include home-section.html section="week04" title=title topics=topics %}
+
+{% assign title = "Week 05: Randomness and Simulations" %}
 {% capture topics %}
   cycles
   sincos
   vectors
   more-random
-{% endcapture %}
-{% include home-section.html section="week04" title=title topics=topics %}
-
-{% assign title = "Week 05: Data Structures" %}
-{% capture topics %}
-  data
-  images
-  videos
 {% endcapture %}
 {% include home-section.html section="week05" title=title topics=topics %}
 

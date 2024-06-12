@@ -8,7 +8,7 @@ Let's now take a look at other ways we can use these and other [trigonometric fu
 As a review: trigonometric functions are functions that, along with the [Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem), define relations between the angles of a right triangle and the length of its sides:
 
 <div class="scaled-images left w75">
-  <img src = "{{ '/assets/images/week04/trigonometry-00.jpg' | relative_url }}"/>
+  <img src = "{{ '/assets/images/week05/trigonometry-00.jpg' | relative_url }}"/>
 </div>
 
 ## Polar Coordinates
@@ -16,7 +16,7 @@ As a review: trigonometric functions are functions that, along with the [Pythago
 We can use these relations to derive formulas for translating between [Cartesian](https://en.wikipedia.org/wiki/Cartesian_coordinate_system) and [polar](https://en.wikipedia.org/wiki/Polar_coordinate_system) coordinate systems.
 
 <div class="scaled-images left w75">
-  <img src = "{{ '/assets/images/week04/trigonometry-01.jpg' | relative_url }}"/>
+  <img src = "{{ '/assets/images/week05/trigonometry-01.jpg' | relative_url }}"/>
 </div>
 
 Cartesian coordinates are what we use to specify points on a plane (and pixels on a screen) using two numbers that represent distances in perpendicular directions. Polar coordinates also specify points on a plane, but using a distance and an angle.
@@ -26,7 +26,7 @@ Just like we can use `for()` loops to iterate over the $$(x, y)$$ cartesian coor
 In this example, our outer `for()` loop iterates through different values for how far we want to be from the center of the canvas, in steps of $$20$$ pixels, and the inner `for()` loop iterates through all possible angles from the positive x-axis, in steps of $$1^{\circ}$$:
 
 <div class="scaled-images left w100">
-  <img src = "{{ '/assets/images/week04/trigonometry-02.jpg' | relative_url }}"/>
+  <img src = "{{ '/assets/images/week05/trigonometry-02.jpg' | relative_url }}"/>
 </div>
 
 {% include p5-editor.html id="X3zrbKW8G" %}
@@ -204,7 +204,7 @@ Polar coordinates are lots of fun, and can also be very useful when we need to c
 If we image two points on our screen, with coordinates $$(x_0, y_0)$$ and $$(x_1, y_1)$$, we can get the distance between them by using the Pythagorean theorem:
 
 <div class="scaled-images left w75">
-  <img src = "{{ '/assets/images/week04/trigonometry-03.jpg' | relative_url }}"/>
+  <img src = "{{ '/assets/images/week05/trigonometry-03.jpg' | relative_url }}"/>
 </div>
 
 In this sketch the distance between two moving points is calculated using the formula for [Euclidean Distance](https://en.wikipedia.org/wiki/Euclidean_distance) $$\sqrt{(x_1 - x_0)^2 + (y_1 - y_0)^2}$$ and the p5.js function [`dist()`](https://p5js.org/reference/#/p5/dist). When those distances are used as the diameter for two circles centered on the canvas, we can see that they are exactly the same:
@@ -216,7 +216,7 @@ In this sketch the distance between two moving points is calculated using the fo
 Similarly, we can use the formula that calculates the polar angle of a point to get the angle between two points:
 
 <div class="scaled-images left w75">
-  <img src = "{{ '/assets/images/week04/trigonometry-04.jpg' | relative_url }}"/>
+  <img src = "{{ '/assets/images/week05/trigonometry-04.jpg' | relative_url }}"/>
 </div>
 
 Or, the angle between a point and itself in the future.
@@ -224,7 +224,7 @@ Or, the angle between a point and itself in the future.
 If a moving point at $$(x, y)$$ has velocity $$v_x$$ and $$v_y$$, its position in the near future will be $$(x + v_x, y + v_y)$$. We can calculate the angle between the point now and the point in the future to get its heading angle:
 
 <div class="scaled-images left w75">
-  <img src = "{{ '/assets/images/week04/trigonometry-05.jpg' | relative_url }}"/>
+  <img src = "{{ '/assets/images/week05/trigonometry-05.jpg' | relative_url }}"/>
 </div>
 
 We can use the heading angle of a moving object to rotate its shape and emphasize its direction of motion:
@@ -238,7 +238,7 @@ p5.js actually has a class called [`Vector`](https://p5js.org/reference/#/p5.Vec
 This drawing shows two vectors/points and if we subtract $$_1$$ from $$v_0$$, we get a third vector that holds information about the distance and direction between them.
 
 <div class="scaled-images left w75">
-  <img src = "{{ '/assets/images/week04/trigonometry-06.jpg' | relative_url }}"/>
+  <img src = "{{ '/assets/images/week05/trigonometry-06.jpg' | relative_url }}"/>
 </div>
 
 The vectors in p5.js actually have builtin functions to calculate distances and angles. We can create two vectors and get the distance between them like this:

@@ -6,7 +6,7 @@ We've seen how to loop through elements and repeat code execution using `for()` 
 One of the simplest ways to create a cycle is to think of a way to periodically reset a variable that just grows and grows. Think of the way an analog clock works: time just keeps going forward and growing, but the longer arm of the clock comes back to its beginning position every $$60$$ minutes, and the shorter arm resets every $$12$$ hours:
 
 <div class="scaled-images left w33">
-  <img src="{{ 'assets/images/week04/clock.jpg' |relative_url }}">
+  <img src="{{ 'assets/images/week05/clock.jpg' |relative_url }}">
 </div>
 
 Before we create any cycles, let's just visualize a variable that keeps growing and growing in p5.js: [`frameCount`](https://p5js.org/reference/#/p5/frameCount). This variable keeps track of how many times the `draw()` function has executed during the execution of our program.
@@ -85,7 +85,7 @@ This works for any periodic functions that is expressed in terms of $$amplitude$
 This equation, for example:
 
 <div class="scaled-images">
-  <img src="{{ 'assets/images/week04/cycles-00.jpg' |relative_url }}">
+  <img src="{{ 'assets/images/week05/cycles-00.jpg' |relative_url }}">
 </div>
 
 We just have to remember that $$t$$ is our `frameCount` and $$mod()$$ is the `%` operator, and this becomes:
@@ -97,7 +97,7 @@ x = amplitude * (2 * (frameCount % periodFrames) / periodFrames - 1) ** 2;
 
 And this:
 <div class="scaled-images">
-  <img src="{{ 'assets/images/week04/cycles-01.jpg' |relative_url }}">
+  <img src="{{ 'assets/images/week05/cycles-01.jpg' |relative_url }}">
 </div>
 
 becomes:

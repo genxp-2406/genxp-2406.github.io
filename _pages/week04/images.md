@@ -22,7 +22,7 @@ We can use [`resize()`](https://p5js.org/reference/#/p5.Image/resize), another m
 After we scale our image we can compute some offsets to center it on the canvas. These offsets are half of the difference between the image size and the canvas size:
 
 <div class="scaled-images left w100">
-  <img src = "{{ '/assets/images/week05/images-00.jpg' | relative_url }}"/>
+  <img src = "{{ '/assets/images/week04/images-00.jpg' | relative_url }}"/>
 </div>
 
 ## Processing Images
@@ -55,13 +55,13 @@ There are two important things to note here:
 If we had a $$3$$ x $$3$$ image with $$9$$ pixels, the beginning of its pixel array would look something like this:
 
 <div class="scaled-images left w100">
-  <img src = "{{ '/assets/images/week05/images-01.jpg' | relative_url }}"/>
+  <img src = "{{ '/assets/images/week04/images-01.jpg' | relative_url }}"/>
 </div>
 
 And the association between image pixel indices $$(x, y)$$ and array index $$i$$:
 
 <div class="scaled-images left w75">
-  <img src = "{{ '/assets/images/week05/images-02.jpg' | relative_url }}"/>
+  <img src = "{{ '/assets/images/week04/images-02.jpg' | relative_url }}"/>
 </div>
 
 What this means is that, if we want to iterate over our image and do something with each pixel, we'll have to do some math to translate between $$(x, y)$$ coordinate to pixel array coordinate $$i$$.
@@ -69,7 +69,7 @@ What this means is that, if we want to iterate over our image and do something w
 Let's start with the simpler case, where we don't care about $$(x, y)$$ position, but just want to manipulate every pixel in our array with the same logic, independent of its location. We'll have to iterate over all of the values in the pixel array, but instead of incrementing our loop index by $$1$$ we will increment it by $$4$$. This way our `i` variable always points to the first of the $$4$$ color values for a pixel.
 
 <div class="scaled-images left w100">
-  <img src = "{{ '/assets/images/week05/images-03.jpg' | relative_url }}"/>
+  <img src = "{{ '/assets/images/week04/images-03.jpg' | relative_url }}"/>
 </div>
 
 We are going to change the green value of every pixel in our image using the `mouseY` position. Since every pixel gets the same change, we don't care about its $$(x, y)$$ location within the image, and we can just iterate over `mImage.pixels` directly with one `for()` loop, whose index increments by $$4$$.
@@ -120,7 +120,7 @@ Now the only thing we have to do is get the color values at the image's $$(x, y)
 Let's consider the following $$4$$ x $$3$$ image with pixel indices $$(x, y)$$, and its corresponding array of pixel values with index $$i$$:
 
 <div class="scaled-images left w100">
-  <img src = "{{ '/assets/images/week05/images-04.jpg' | relative_url }}"/>
+  <img src = "{{ '/assets/images/week04/images-04.jpg' | relative_url }}"/>
 </div>
 
 It's easy to figure out the value for $$i$$ for the first row in the image when $$y = 0$$: $$i$$ is just equal to the $$x$$ value. So, $$(0, 0)$$, $$(1, 0)$$, $$(2, 0)$$, $$(3, 0)$$ correspond to $$[0, 1, 2, 3]$$.
@@ -142,7 +142,7 @@ Just one more adjustment, because unfortunately our image pixel array doesn't on
 When we increment $$x$$ by $$1$$ we actually want to increment our $$i$$ by $$4$$ to get to the next pixel's first color value. Likewise, when $$y$$ increases by $$1$$ we want to increment $$i$$ by $$4 \times width$$, so we again land on the first color value of a pixel:
 
 <div class="scaled-images left w100">
-  <img src = "{{ '/assets/images/week05/images-05.jpg' | relative_url }}"/>
+  <img src = "{{ '/assets/images/week04/images-05.jpg' | relative_url }}"/>
 </div>
 
 So, to get the index of the first color value for a pixel at $$(x, y)$$, we need to do:

@@ -61,13 +61,13 @@ It's a little bit harder to figure out the dominant color channel in a video or 
 
 <div class="image-row">
   <div class="img-wrapper">
-    <img src = "{{ '/assets/images/week05/camera-00.jpg' | relative_url }}"/>
+    <img src = "{{ '/assets/images/week04/camera-00.jpg' | relative_url }}"/>
   </div>
   <div class="img-wrapper">
-    <img src = "{{ '/assets/images/week05/camera-01.jpg' | relative_url }}"/>
+    <img src = "{{ '/assets/images/week04/camera-01.jpg' | relative_url }}"/>
   </div>
   <div class="img-wrapper">
-    <img src = "{{ '/assets/images/week05/camera-02.jpg' | relative_url }}"/>
+    <img src = "{{ '/assets/images/week04/camera-02.jpg' | relative_url }}"/>
   </div>
 </div>
 

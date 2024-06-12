@@ -22,7 +22,7 @@ In the case of sine, as the angle $$\theta$$ grows from $$0$$ to $$\frac{\pi}{2}
 
 Visually:
 <div class="scaled-images w75">
-  <img src="{{ '/assets/images/week04/sine-00.jpg' | relative_url }}">
+  <img src="{{ '/assets/images/week05/sine-00.jpg' | relative_url }}">
 </div>
 
 If we look for equations that relate the sine and cosine functions to cyclic or [harmonic](https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Classical_Mechanics_(Dourmashkin)/23%3A_Simple_Harmonic_Motion/23.01%3A_Introduction_to_Periodic_Motion#Simple_Harmonic_Motion:_Quantitative) motion, we might find something like this:

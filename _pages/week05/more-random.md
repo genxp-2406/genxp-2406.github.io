@@ -38,7 +38,7 @@ The *expected value* is the average, or mean, value of the distribution, usually
 The *spread* of a distribution is officially called a *standard deviation*. It's commonly denoted by the greek letter *sigma* $$\sigma$$, and it specifies how likely numbers far from the mean are to occur. This plot shows the relationship between mean and standard deviation for a gaussian distribution with mean $$0$$ and standard deviation $$\sigma$$:
 
 <div class="scaled-images w75">
-  <img src = "{{ '/assets/images/week04/gaussian-00.jpg' | relative_url }}"/>
+  <img src = "{{ '/assets/images/week05/gaussian-00.jpg' | relative_url }}"/>
 </div>
 
 What this graph shows is that about $$68\%$$ of the values chosen from a gaussian distribution will be within $$1$$ standard deviation from the mean, about $$95\%$$ will be within $$2$$ standard deviations, and almost all of the values ($$99.6\%$$ of them) will be within $$3$$ standard deviations from the mean.
