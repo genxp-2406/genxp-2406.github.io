@@ -40,6 +40,8 @@ permalink: /
   data
   images
   videos
+  sound-files
+  sound-processing
 {% endcapture %}
 {% include home-section.html section="week04" title=title topics=topics %}
 
