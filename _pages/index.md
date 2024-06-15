@@ -22,8 +22,6 @@ permalink: /
 {% endcapture %}
 {% include home-section.html section="week02" title=title topics=topics open="open" %}
 
-{% comment %}
-
 {% assign title = "Week 03: Time" %}
 {% capture topics %}
   arrays
@@ -35,6 +33,8 @@ permalink: /
 {% endcapture %}
 {% include home-section.html section="week03" title=title topics=topics %}
 
+{% comment %}
+
 {% assign title = "Week 04: Data Structures" %}
 {% capture topics %}
   data
@@ -42,6 +42,17 @@ permalink: /
   videos
 {% endcapture %}
 {% include home-section.html section="week04" title=title topics=topics %}
+
+{% assign title = "Datasets: " %}
+{% capture topics %}
+  beijing
+  crashes
+  inflation
+  stocks
+  trees
+  wine
+{% endcapture %}
+{% include home-section.html section="datasets" title=title topics=topics %}
 
 {% assign title = "Week 05: Randomness and Simulations" %}
 {% capture topics %}
