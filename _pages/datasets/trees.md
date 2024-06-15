@@ -1,6 +1,9 @@
-## 2015 Street Tree Census
-
+---
+title: "2015 Street Tree Census"
+---
 Street tree data from the TreesCount 2015 Street Tree Census, conducted by volunteers and staff organized by NYC Parks & Recreation and partner organizations. Tree data collected includes tree species, diameter and perception of health.
+
+### Files: [CSV](../../assets/datasets/Tree-Census-2015/Tree-Census-2015.csv), [JSON](../../assets/datasets/Tree-Census-2015/Tree-Census-2015.json)
 
 ### Number of samples: 65,216
 

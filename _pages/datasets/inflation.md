@@ -1,6 +1,9 @@
-## Global Inflation Dataset - (1970~2022)
-
+---
+title: "Global Inflation Dataset: (1970 - 2022)"
+---
 Global Energy, Food, Consumer and Producer price Inflation of 206 Countries. This dataset provides a comprehensive collection of inflation rates across 206 countries from 1970 to 2022. It covers four critical sectors of the economy: energy, food, consumer, and producer price inflation.
+
+### Files: [CSV](../../assets/datasets/Global-Inflation/Global-Inflation.csv), [JSON](../../assets/datasets/Global-Inflation/Global-Inflation.json)
 
 ### Number of samples: 775
 

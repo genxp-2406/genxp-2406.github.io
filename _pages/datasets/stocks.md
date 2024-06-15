@@ -1,6 +1,9 @@
-## Stock Exchange Data
-
+---
+title: "Stock Exchange Data"
+---
 Daily price data for indexes tracking stock exchanges from all over the world (United States, China, Canada, Germany, Japan, and more). The data was all collected from Yahoo Finance, which had several decades of data available for most exchanges.
+
+### Files: [CSV](../../assets/datasets/Stock-Exchange/Stock-Exchange.csv), [JSON](../../assets/datasets/Stock-Exchange/Stock-Exchange.json)
 
 ### Number of samples: 66,028
 

@@ -1,6 +1,9 @@
-## Beijing PM2.5 Dataset
-
+---
+title: "Beijing PM2.5 Dataset"
+---
 Dataset of Beijing air quality measurements.
+
+### Files: [CSV](../../assets/datasets/Beijing-PM2.5/Beijing-PM2.5.csv), [JSON](../../assets/datasets/Beijing-PM2.5/Beijing-PM2.5.json)
 
 ### Number of samples: 41,757
 

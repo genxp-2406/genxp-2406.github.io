@@ -1,4 +1,9 @@
-## Wine Information
+---
+title: "Wine Information"
+---
+Wine quality and characteristic descriptions from wine reviews in magazines.
+
+### Files: [CSV](../../assets/datasets/Winemag/Winemag.csv), [JSON](../../assets/datasets/Winemag/Winemag.json)
 
 ### Number of samples: 7,728
 
