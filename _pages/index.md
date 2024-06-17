@@ -20,7 +20,7 @@ permalink: /
   functions
   random
 {% endcapture %}
-{% include home-section.html section="week02" title=title topics=topics open="open" %}
+{% include home-section.html section="week02" title=title topics=topics %}
 
 {% assign title = "Week 03: Time" %}
 {% capture topics %}
@@ -31,7 +31,7 @@ permalink: /
   animations
   maths
 {% endcapture %}
-{% include home-section.html section="week03" title=title topics=topics %}
+{% include home-section.html section="week03" title=title topics=topics open="open" %}
 
 {% comment %}
 
