@@ -31,9 +31,7 @@ permalink: /
   animations
   maths
 {% endcapture %}
-{% include home-section.html section="week03" title=title topics=topics open="open" %}
-
-{% comment %}
+{% include home-section.html section="week03" title=title topics=topics %}
 
 {% assign title = "Week 04: Data Structures" %}
 {% capture topics %}
@@ -43,7 +41,7 @@ permalink: /
   sound-files
   sound-processing
 {% endcapture %}
-{% include home-section.html section="week04" title=title topics=topics %}
+{% include home-section.html section="week04" title=title topics=topics open="open" %}
 
 {% assign title = "Datasets: " %}
 {% capture topics %}
@@ -55,6 +53,8 @@ permalink: /
   wine
 {% endcapture %}
 {% include home-section.html section="datasets" title=title topics=topics %}
+
+{% comment %}
 
 {% assign title = "Week 05: Randomness and Simulations" %}
 {% capture topics %}
