@@ -40,6 +40,8 @@ permalink: /
   videos
   sound-files
   sound-processing
+  ide
+  git
 {% endcapture %}
 {% include home-section.html section="week04" title=title topics=topics open="open" %}
 
