@@ -52,7 +52,7 @@ The easiest way to install, and easiest way to get started with `git`, is by usi
 
 This video quickly goes over how to download and install the App on a Mac:
 
-{% include video.html url="week01/git/git-video-00.webm" %}
+{% include video.html url="week04/git/git-video-00.webm" %}
 
 ## Basic Workflow
 
@@ -60,11 +60,11 @@ Now that we have `git` installed, let's go over how to set up and use it in a pr
 
 First, let's use our computer's file manager to create an empty directory for our project, and then let's add this directory to our *IDE*:
 
-{% include video.html url="week01/git/git-video-01.webm" %}
+{% include video.html url="week04/git/git-video-01.webm" %}
 
 Next, let's add two files to our project, one called `index.html` and another called `sketch.js`, and start working on our project:
 
-{% include video.html url="week01/git/git-video-02.webm" %}
+{% include video.html url="week04/git/git-video-02.webm" %}
 
 The exact content of these files is not very important right now. We just want something we can add to version control. We could just as well have started with some project that we already had in our computer.
 
@@ -74,7 +74,7 @@ Once the app initializes our repository it also automatically adds and *commits*
 
 If we select the *commit* and look at the content of the files, all of their lines will be shaded green, meaning those were new lines added to our repository history:
 
-{% include video.html url="week01/git/git-video-03.webm" %}
+{% include video.html url="week04/git/git-video-03.webm" %}
 
 If we now make changes to our files, we'll see that both our IDE and the GitHub App notice those changes. The IDE will add vertical marks along the side of the modified lines of our code, and the GitHub App will list our file and highlight its modifications, under the `Changes` tab.
 
@@ -84,11 +84,11 @@ We can add these changes to our repository's permanent history by writing a litt
 
 If we now check the history we'll see that we have a new commit, that shows exactly what we changed:
 
-{% include video.html url="week01/git/git-video-04.webm" %}
+{% include video.html url="week04/git/git-video-04.webm" %}
 
 If we make a mistake and create a commit before we meant to, or if we accidentally add the wrong code to a commit, we can always *undo* the last commit. This will restore our code to whatever it was right before the commit, allowing us to go back into our IDE to fix anything before updating the commit message (if necessary) and re-committing:
 
-{% include video.html url="week01/git/git-video-05.webm" %}
+{% include video.html url="week04/git/git-video-05.webm" %}
 
 ## Branches
 
@@ -96,7 +96,7 @@ Let's see how to create parallel *branches* of our project to experiment and tes
 
 We'll start with a common *base* commit where we are using `black` background and `white` fills in our project:
 
-{% include video.html url="week01/git/git-video-06.webm" %}
+{% include video.html url="week04/git/git-video-06.webm" %}
 
 Now's let's create a *branch* of our project where we can experiment with different colors.
 
@@ -106,7 +106,7 @@ Now's let's create a *branch* of our project where we can experiment with differ
 
 We'll call the new branch `bright-colors`. Once created, all of the history from the `main` branch up until this point will be copied into the new branch, but from this point forward they will most likely have different commit histories. Once we're in the new branch, any changes we commit will only be added to this branch's history:
 
-{% include video.html url="week01/git/git-video-07.webm" %}
+{% include video.html url="week04/git/git-video-07.webm" %}
 
 We can have many parallel branches, starting from the same *base* commit, or we can branch from branches.
 
@@ -116,7 +116,7 @@ We can have many parallel branches, starting from the same *base* commit, or we 
 
 In our example, let's go back to our `main` branch and create a third branch called `pastel-colors` to experiment with another color palette. The workflow is the same as before: create the branch, change the code, commit to the new history:
 
-{% include video.html url="week01/git/git-video-08.webm" %}
+{% include video.html url="week04/git/git-video-08.webm" %}
 
 We now have access to all three versions of our code. Nothing was lost, we don't have to give our files funny names, and all of the changes are documented in our commit histories.
 
@@ -130,7 +130,7 @@ Either way, after we've implemented some new features or experimented with multi
 
 In our example, after we explore and test our three color palettes, lets say we decide that the `bright-colors` palette is actually the best and we want that to become the `main` version of our code. We just have to use the merge option to bring the changes from `bright-colors` into `main`:
 
-{% include video.html url="week01/git/git-video-09.webm" %}
+{% include video.html url="week04/git/git-video-09.webm" %}
 
 ## Conflicts
 
@@ -144,7 +144,7 @@ Conflicts are more common when working with other people, but they can happen be
 
 In our example, if we try to merge the `pastel-colors` branch into `main` after we've merged `bright-colors` we'll get a conflict because those two branches changed the exact same lines of code. In this situation, `git` will stop the merge and ask us to *resolve* the conflict before it can continue. Our IDE has a nice built-in interface for selecting which of the sets of changes we want to keep. After that, we go back to the GitHub app and finish the merge:
 
-{% include video.html url="week01/git/git-video-10.webm" %}
+{% include video.html url="week04/git/git-video-10.webm" %}
 
 ## Git Review
 
@@ -176,13 +176,13 @@ Before we can host our repository on GitHub we need to create a GitHub account.
 
 <div style="width:100%; position:relative; overflow-y:hidden; padding-bottom:51.5%;">
   <div style="position:absolute; top:-5%">
-    {% include video.html url="week01/git/github-video-00.webm" %}
+    {% include video.html url="week04/git/github-video-00.webm" %}
   </div>
 </div>
 
 Now, we can ask the GitHub App to publish our repository on GitHub. It's going to ask us to allow the GitHub app to access our GitHub account, and after some clicking around we'll see our repository online:
 
-{% include video.html url="week01/git/github-video-01.webm" %}
+{% include video.html url="week04/git/github-video-01.webm" %}
 
 ## Basic GitHub Workflow
 
@@ -190,11 +190,11 @@ The workflow for working in a shared repo is very similar.
 
 The major difference is that every time we sit down to work on our project, before we write any new code, we should always *fetch* and *pull* the current version of our *remote* repository. This brings in any changes made by other people, which we can see if we look at the project's commit history. These are actually two separate actions: first, *fetch* looks at the remote repository and lets us know if our local copy is different from the remote copy, and how. If there are new commits in the remote repository, we can choose to *pull* and incorporate them into our local history.
 
-{% include video.html url="week01/git/github-video-02.webm" %}
+{% include video.html url="week04/git/github-video-02.webm" %}
 
 Conversely, once we're flowing and writing code, changing files and committing to our local repository, we should also always remember to *push* our local changes to the *remote* repository. This way other people can have access to our latest version of the project. We just have to remember that first we commit locally, then, after some number of local commits, we send all of the new changes to the remote repository with one *push*.
 
-{% include video.html url="week01/git/github-video-03.webm" %}
+{% include video.html url="week04/git/github-video-03.webm" %}
 
 ## Smart GitHub Workflow
 
@@ -228,7 +228,7 @@ We can think of a pull request as a collaborative merge. We choose which branche
 
 Once people are happy with the proposed changes, someone merges our `feature` branch pull request into the shared `dev` branch.
 
-{% include video.html url="week01/git/github-video-04.webm" %}
+{% include video.html url="week04/git/github-video-04.webm" %}
 
 This might seem like a whole lot of clicking, but for big projects with large teams, it's important to have some strategies like this to keep all versions of our code organized and our project working.
 
