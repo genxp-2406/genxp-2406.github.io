@@ -9,13 +9,13 @@ A version control system is crucial when we start working on larger and larger p
 
 They prevent us from ending up in this situation:
 <div class="scaled-images left w100">
-  <img src="{{ '/assets/images/week01/git/git-00.jpg' | relative_url }}">
+  <img src="{{ '/assets/images/week04/git/git-00.jpg' | relative_url }}">
 </div>
 
 They do this by keeping track of all of the changes in our files, and providing mechanisms for us to go back in time to any version of our code that was saved in its history.
 
 <div class="scaled-images left w75">
-  <img src="{{ '/assets/images/week01/git/git-01.jpg' | relative_url }}">
+  <img src="{{ '/assets/images/week04/git/git-01.jpg' | relative_url }}">
 </div>
 
 It gives us another level of *saving* for our files. One that not only allows us to later see what was added, removed or modified in each of our files, but also when, and by whom. It also has ways of letting us group changes that we make in different files, so we can better track how different parts of a project are related.
@@ -23,7 +23,7 @@ It gives us another level of *saving* for our files. One that not only allows us
 We can definitely use a version control system by ourselves to keep track of our changes on our files, but if we're working on a project with someone else who is also using a version control system on their computer, we can use version control to synchronize the changes that we make on the shared files.
 
 <div class="scaled-images left w75">
-  <img src="{{ '/assets/images/week01/git/git-02.jpg' | relative_url }}">
+  <img src="{{ '/assets/images/week04/git/git-02.jpg' | relative_url }}">
 </div>
 
 A version control system also helps us track different versions of our code. Not only can we always go back to some point in the past history of our code, we can also *branch* our history and keep parallel versions of our files.
@@ -31,7 +31,7 @@ A version control system also helps us track different versions of our code. Not
 This can be very useful when we're experimenting and testing different strategies and methods for implementing an algorithm or procedure. A version control system will help us switch between these versions without losing any information.
 
 <div class="scaled-images left w75">
-  <img src="{{ '/assets/images/week01/git/git-03.jpg' | relative_url }}">
+  <img src="{{ '/assets/images/week04/git/git-03.jpg' | relative_url }}">
 </div>
 
 ## Git
@@ -101,7 +101,7 @@ We'll start with a common *base* commit where we are using `black` background an
 Now's let's create a *branch* of our project where we can experiment with different colors.
 
 <div class="scaled-images left w75">
-  <img src="{{ '/assets/images/week01/git/git-03.jpg' | relative_url }}">
+  <img src="{{ '/assets/images/week04/git/git-03.jpg' | relative_url }}">
 </div>
 
 We'll call the new branch `bright-colors`. Once created, all of the history from the `main` branch up until this point will be copied into the new branch, but from this point forward they will most likely have different commit histories. Once we're in the new branch, any changes we commit will only be added to this branch's history:
@@ -111,7 +111,7 @@ We'll call the new branch `bright-colors`. Once created, all of the history from
 We can have many parallel branches, starting from the same *base* commit, or we can branch from branches.
 
 <div class="scaled-images left w75">
-  <img src="{{ '/assets/images/week01/git/git-04.jpg' | relative_url }}">
+  <img src="{{ '/assets/images/week04/git/git-04.jpg' | relative_url }}">
 </div>
 
 In our example, let's go back to our `main` branch and create a third branch called `pastel-colors` to experiment with another color palette. The workflow is the same as before: create the branch, change the code, commit to the new history:
@@ -125,7 +125,7 @@ Branching can also be useful when adding features or making extensive and comple
 Either way, after we've implemented some new features or experimented with multiple options for our project, we can *merge* one branch into another, basically combining their histories into one common history.
 
 <div class="scaled-images left w75">
-  <img src="{{ '/assets/images/week01/git/git-05.jpg' | relative_url }}">
+  <img src="{{ '/assets/images/week04/git/git-05.jpg' | relative_url }}">
 </div>
 
 In our example, after we explore and test our three color palettes, lets say we decide that the `bright-colors` palette is actually the best and we want that to become the `main` version of our code. We just have to use the merge option to bring the changes from `bright-colors` into `main`:
@@ -137,7 +137,7 @@ In our example, after we explore and test our three color palettes, lets say we 
 When the histories between two branches diverge by too much, or when the exact same lines of code are changed in different branches, there could be *conflicts* that prevent a merge because `git` won't know how to automatically combine those changes.
 
 <div class="scaled-images left w75">
-  <img src="{{ '/assets/images/week01/git/git-06.jpg' | relative_url }}">
+  <img src="{{ '/assets/images/week04/git/git-06.jpg' | relative_url }}">
 </div>
 
 Conflicts are more common when working with other people, but they can happen between branches when working alone.
@@ -163,13 +163,13 @@ We can probably already imagine how a system that keeps multiple versions of our
 And this is exactly what [GitHub](https://github.com/) does.
 
 <div class="scaled-images left w75">
-  <img src="{{ '/assets/images/week01/git/github-00.jpg' | relative_url }}">
+  <img src="{{ '/assets/images/week04/git/github-00.jpg' | relative_url }}">
 </div>
 
 GitHub is one of a few online repository hosting services. Other services include [GitLab.com](https://gitlab.com/), [Bitbucket](https://bitbucket.org/) and [CodeCommit](https://aws.amazon.com/codecommit/), but GitHub is by far the most full-featured, commonly used and easiest to get started with. And, as we'll see, `git` makes it easy for us to actually use multiple remote services at the same time if we want to:
 
 <div class="scaled-images left w75">
-  <img src="{{ '/assets/images/week01/git/github-01.jpg' | relative_url }}">
+  <img src="{{ '/assets/images/week04/git/github-01.jpg' | relative_url }}">
 </div>
 
 Before we can host our repository on GitHub we need to create a GitHub account.
@@ -213,7 +213,7 @@ And now we always work in the `dev` branch. Code, save, commit, code, save, comm
 Every once in a while `dev` gets merged into `test`, the code is tested, errors are fixed, and, eventually `test` gets merged into `prod`, and any changes made directly to `test` get branched into `dev`.
 
 <div class="scaled-images left w100">
-  <img src="{{ '/assets/images/week01/git/github-02.jpg' | relative_url }}">
+  <img src="{{ '/assets/images/week04/git/github-02.jpg' | relative_url }}">
 </div>
 
 ## Pull Requests
